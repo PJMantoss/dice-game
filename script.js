@@ -10,6 +10,8 @@ const message = document.getElementById('message');
 const rollBtn = document.getElementById('rollBtn');
 const resetBtn = document.getElementById('resetBtn');
 
+function showResetBtn(){}
+
 //Connect click event listener to Roll Dice button
 rollBtn.addEventListener('click', function(){
     const randomNumber = Math.floor(Math.random() * 6) + 1;
@@ -37,4 +39,11 @@ rollBtn.addEventListener('click', function(){
         message.textContent = "Player 2 won 🎉";
         showResetBtn();
     }
+
+    Player1Turn = !Player1Turn;
+
+    // reset game
+    resetBtn.addEventListener('click', function(){
+        reset();
+    })
 })
