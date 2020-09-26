@@ -61,6 +61,8 @@ function reset(){
     player1Dice.textContent = "-";
     player2Dice.textContent = "-";
     message.textContent = "Player 1 Turn";
+    player1Dice.classList.add('active');
+    player2Dice.classList.remove('active');
     rollBtn.style.display = "block";
     resetBtn.style.display = "none";
 }
