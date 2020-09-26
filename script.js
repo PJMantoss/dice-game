@@ -16,5 +16,6 @@ rollBtn.addEventListener('click', function(){
 
     if(Player1Turn){
         Player1Score += randomNumber;
+        player1scoreboard.textContent = Player1Score;
     }
 })
