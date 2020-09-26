@@ -10,7 +10,10 @@ const message = document.getElementById('message');
 const rollBtn = document.getElementById('rollBtn');
 const resetBtn = document.getElementById('resetBtn');
 
-function showResetBtn(){}
+function showResetBtn(){
+    rollBtn.style.display = "none";
+    resetBtn.style.display = "block";
+}
 
 //Connect click event listener to Roll Dice button
 rollBtn.addEventListener('click', function(){
@@ -47,3 +50,10 @@ rollBtn.addEventListener('click', function(){
         reset();
     })
 })
+
+//reset
+function reset(){
+    Player1Score = 0;
+    Player2Score = 0;
+    Player1Turn = true;
+}
