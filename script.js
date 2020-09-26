@@ -21,5 +21,6 @@ rollBtn.addEventListener('click', function(){
         player1Dice.classList.remove('active');
         player2Dice.classList.add('active');
         message.textContent = "Player 2 Turn";
+        console.log(message);
     }
 })
