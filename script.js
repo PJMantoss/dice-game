@@ -17,5 +17,9 @@ rollBtn.addEventListener('click', function(){
     if(Player1Turn){
         Player1Score += randomNumber;
         player1scoreboard.textContent = Player1Score;
+        player1Dice.textContent = randomNumber;
+        player1Dice.classList.remove('active');
+        player2Dice.classList.add('active');
+        message.textContent = "Player 2 Turn";
     }
 })
