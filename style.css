@@ -27,3 +27,9 @@ body {
     background: white;
     box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
 }
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
