@@ -29,4 +29,12 @@ rollBtn.addEventListener('click', function(){
         player1Dice.classList.add('active');
         message.textContent = "Player 1 Turn";
     }
+
+    if(Player1Score >= 20){
+        message.textContent = "Player 1 won 🥳";
+        showResetBtn();
+    }else if(Player2Score >= 20){
+        message.textContent = "Player 2 won 🎉";
+        showResetBtn();
+    }
 })
