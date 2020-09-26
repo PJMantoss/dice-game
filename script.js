@@ -56,4 +56,11 @@ function reset(){
     Player1Score = 0;
     Player2Score = 0;
     Player1Turn = true;
+    player1scoreboard.textContent = 0;
+    player2scoreboard.textContent = 0;
+    player1Dice.textContent = "-";
+    player2Dice.textContent = "-";
+    message.textContent = "Player 1 Turn";
+    rollBtn.style.display = "block";
+    resetBtn.style.display = "none";
 }
