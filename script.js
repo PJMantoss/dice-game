@@ -9,3 +9,12 @@ const player2scoreboard = document.getElementById('player2scoreBoard');
 const message = document.getElementById('message');
 const rollBtn = document.getElementById('rollBtn');
 const resetBtn = document.getElementById('resetBtn');
+
+//Connect click event listener to Roll Dice button
+rollBtn.addEventListener('click', function(){
+    const randomNumber = Math.floor(Math.random() * 6) + 1;
+
+    if(Player1Turn){
+        Player1Score += randomNumber;
+    }
+})
